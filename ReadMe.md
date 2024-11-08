@@ -1,4 +1,4 @@
-### ANTLR-to-Guidance Translator
+# ANTLR-to-Guidance Translator
 
 A simple tool to convert ANTLR grammar files (.g4) into Python Guidance functions for controlled language model decoding.
 
