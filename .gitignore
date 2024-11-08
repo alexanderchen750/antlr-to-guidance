@@ -1,3 +1,4 @@
 /antlr-old
 /json
 .DS_store
+__pycache__/
