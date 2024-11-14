@@ -322,15 +322,15 @@ class GuidanceVisitor(ANTLRv4ParserVisitor):
     def visitEbnf(self, ctx:ANTLRv4Parser.EbnfContext):
         """Processes EBNF expressions, applying repetition or optional suffixes."""
         block_code = self.visit(ctx.block())
-        suffix = ctx.blockSuffix().ebnfSuffix().getText()
-        if suffix == '*':
-            return f"zero_or_more({block_code})"
-        elif suffix == '+':
-            return f"one_or_more({block_code})"
-        elif suffix == '?':
-            return f"select(['', {block_code}])"
-        else:
-            return block_code
+        if ctx.blockSuffix() and ctx.blockSuffix().ebnfSuffix():
+            suffix = ctx.blockSuffix().ebnfSuffix().getText()
+            if suffix == '*':
+                return f"zero_or_more({block_code})"
+            elif suffix == '+':
+                return f"one_or_more({block_code})"
+            elif suffix == '?':
+                return f"select(['', {block_code}])"
+        return block_code
 
     def visitBlock(self, ctx:ANTLRv4Parser.BlockContext):
         """Processes a block containing alternatives."""
