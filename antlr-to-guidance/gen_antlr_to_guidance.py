@@ -6,7 +6,7 @@ from ANTLRv4Parser import ANTLRv4Parser
 from GuidanceVisitorV5 import GuidanceVisitor
 
 def parse_file(file_path):
-    input_stream = FileStream(file_path)
+    input_stream = FileStream(file_path, encoding='utf-8')
     lexer = ANTLRv4Lexer(input_stream)
     token_stream = CommonTokenStream(lexer)
     parser = ANTLRv4Parser(token_stream)
