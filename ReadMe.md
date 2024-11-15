@@ -21,5 +21,15 @@ Run
 
 `python main.py path/to/grammar.g4`
 
-will update to add CLI
+Once generate, make sure to do the following:
+In the first function in the generated file, which is start rule, remove + EOF()
+
+To generate guidance code following a grammar, use the start rule function.
+
+ex.
+```bash
+lm = model_name + prompt
+lm += json()
+```
+
   
