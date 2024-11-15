@@ -19,7 +19,7 @@ cd antlr-to-guidance
 Set file_path in main.py to select .g4 file to convert
 Run
 
-`python main.py path/to/grammar.g4`
+`python3 gen_antlr_to_guidance.py path/to/grammar.g4`
 
 Once generate, make sure to do the following:
 In the first function in the generated file, which is start rule, remove + EOF()
