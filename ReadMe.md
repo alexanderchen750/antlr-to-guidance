@@ -25,7 +25,7 @@ Generate the guidance python functions
 
 `python3 gen_antlr_to_guidance.py path/to/grammar.g4`
 
-This should generate grammar-to-guidance.py folder
+This should generate grammar-to-guidance.py file
 
 Once generate, make sure to do the following:
 In the first function in the generated file, which is start rule, remove + EOF()
