@@ -13,13 +13,19 @@ Clone the repo
 git clone https://github.com/alexanderchen750/antlr-to-guidance.git
 cd antlr-to-guidance
 ```
+Install the the runtime
+
+`pip install antlr4-python3-runtime`
 
 
 ## Usage
-Set file_path in main.py to select .g4 file to convert
-Run
+Add .g4 file to antlr-to-guidance folder
+
+Generate the guidance python functions
 
 `python3 gen_antlr_to_guidance.py path/to/grammar.g4`
+
+This should generate grammar-to-guidance.py folder
 
 Once generate, make sure to do the following:
 In the first function in the generated file, which is start rule, remove + EOF()
