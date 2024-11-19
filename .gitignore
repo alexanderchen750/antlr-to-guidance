@@ -2,3 +2,5 @@
 /json
 .DS_store
 __pycache__/
+/antlr-to-guidance/antlr_output/
+/antlr-to-guidance/validation.log
