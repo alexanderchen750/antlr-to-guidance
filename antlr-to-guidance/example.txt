@@ -1,0 +1,73 @@
+{
+    "user": {
+        "id": 12345,
+        "name": "Alexander Chen",
+        "email": "alexander.chen@example.com",
+        "isVerified": true,
+        "age": 30,
+        "address": {
+            "street": "1234 Elm St",
+            "city": "Los Angeles",
+            "state": "CA",
+            "zip": "90001"
+        },
+        "preferences": {
+            "notifications": {
+                "email": true,
+                "sms": false,
+                "push": true
+            },
+            "language": "en",
+            "theme": "dark"
+        },
+        "friends": [
+            {
+                "id": 54321,
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "isVerified": false
+            },
+            {
+                "id": 67890,
+                "name": "Jane Smith",
+                "email": "jane.smith@example.com",
+                "isVerified": true
+            }
+        ],
+        "purchaseHistory": [
+            {
+                "orderId": "A1001",
+                "date": "2023-01-15",
+                "total": 59.99,
+                "items": [
+                    {
+                        "productId": "P100",
+                        "productName": "Wireless Mouse",
+                        "quantity": 1,
+                        "price": 29.99
+                    },
+                    {
+                        "productId": "P101",
+                        "productName": "Keyboard",
+                        "quantity": 1,
+                        "price": 30.00
+                    }
+                ]
+            },
+            {
+                "orderId": "A1002",
+                "date": "2023-03-22",
+                "total": 120.00,
+                "items": [
+                    {
+                        "productId": "P102",
+                        "productName": "Monitor",
+                        "quantity": 1,
+                        "price": 120.00
+                    }
+                ]
+            }
+            
+        ]
+    }
+}
